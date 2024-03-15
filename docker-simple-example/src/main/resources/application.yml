@@ -1,0 +1,23 @@
+server:
+  port: 8181
+
+logging:
+  level:
+    docker.simple.example: INFO
+    org.springframework: INFO
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: Docker Simple Example
+    title: Docker Simple Example
+    description: Development SpringBoot with Docker
+    message: This is a Simple Docker Image Example
+    server : localhost
+    port: 8181
+
+  jackson:
+    serialization.indent_output: true
+  messages:
+    cache-duration: PT1S # 1 second, see the ISO 8601 standard
