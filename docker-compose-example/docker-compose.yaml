@@ -1,0 +1,50 @@
+version: "1.0.0"
+services:
+  backend: # Image of my app construction
+    container_name: container_docker_compose_example
+    image: my-example-image/image_docker_compose_example
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8181:8181"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - spring.datasource.url=jdbc:mysql://db:3306/demo_db
+      - spring.datasource.username=root
+      - spring.datasource.password=rand_password
+      - spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+      - spring.jpa.hibernate.ddl-auto=create
+      - spring.jpa.hibernate.show-sql=true
+  phpmyadmin:   #Image client for mysql mariadb
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_USER=root
+      - PMA_PASSWORD=rand_password
+    depends_on:
+      - db
+  #  "db" is the name of host (server) like localhost but in this case serve to image docker for connection
+  db: #Image mysql mariadb
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rand_password
+      MYSQL_DATABASE: demo_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: rand_password
+    ports:
+      - "3306:3306" #insert here default port xampp server db
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-prand_password"]
+      retries: 10
+      interval: 3s
+      timeout: 30s
+    volumes:
+      - /var/lib/mysql
