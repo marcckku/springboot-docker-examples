@@ -1,12 +1,8 @@
-
-
-
-Simple SpringBoot  Docker Image Example
-=============
----
-
 [`SPRINGBOOT`] ![ICON SPRINGBOOT](https://start.spring.io/icon_144x144.7d360c62a3c2b77823306d48e19a144b.png)   [`DOCKER`] ![ICON DOCKER](https://avatars.githubusercontent.com/u/7739233?s=200&v=4)
 
+---
+Spring Boot Docker Image Simple Example
+=============
 # Required Setup
 
 - [**Spring Boot v.3**](http://projects.spring.io/spring-boot/)  ![SPRINGBOOT-INITIALIZR](https://spring.io/favicon-32x32.png?v=96334d577af708644f6f0495dd1c7bc8) or above
