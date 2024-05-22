@@ -1,0 +1,21 @@
+server:
+  port: 8181
+
+logging:
+  level:
+    simple.example: INFO
+    org.springframework: INFO
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: Docker Engine OCI Image Simple Example - http://localhost:8181/api/ip
+    title: Creation OCI Image by Docker Engine
+    description: Development Oci Image from SpringBoot App
+    message: This is a Simple Oci Image by Docker
+    server: localhost
+    port: 8181
+
+  jackson:
+    serialization.indent_output: true
