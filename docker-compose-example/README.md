@@ -73,8 +73,6 @@ Spring Boot App Mysql Database Connection - Docker Image Creation Orchestrated t
      - On Docker Desktop Client you can see the result:
         ![docker-desktop-client.png](06_output-exec-compose-file-docker-desktop.png)
 
-      **OUTPUT**
-
        1. PhpMyAdmin Client is up on localhost at port 8080 :
          ![phpmyadmin-console.png](07_phpmyadmin-console.png)
            - Server `db` created.
@@ -99,19 +97,19 @@ Spring Boot App Mysql Database Connection - Docker Image Creation Orchestrated t
         
           ![mariadb-server-default-port.png](10_mariadb-server-default-port.png)
 
-   * As a result 3 images were created:
-       1. [x] Spring Boot App (Inside of Container)
-       2. [x] MariaDB Server (Database Mysql)
-       3. [x] PhpMyAdmin Client
-   - and one Container
-       1. [x] container_docker_compose_example
+           * As a result 3 images were created:
+               1. [x] Spring Boot App (Inside of Container)
+               2. [x] MariaDB Server (Database Mysql)
+               3. [x] PhpMyAdmin Client
+           - and one Container
+               1. [x] container_docker_compose_example
 
 
 
 ****
 In summary:
 >  We have seen the creation of a Docker image from Spring Boot app that connects to a Mysql Database and its Client
-orchestrated by Composer file from Plugin Docker on IntelliJ IDE
+orchestrated by Composer file and Dockerfile from Plugin Docker on IntelliJ IDE.
 
 
 That's all!!...
