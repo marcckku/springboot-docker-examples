@@ -419,17 +419,16 @@ Spring Boot OCI Image by Docker Engine - Simple Example
           docker-engine-oci-image-simple-example:0.0.1-SNAPSHOT
         ```
         
-      #### OPTIONAL Customize Name by Plugin Maven
-        * [**Custom Image Name**](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#build-image.examples.custom-image-name)
+   #### OPTIONAL Customize Name by Plugin Maven
+   * [**Custom Image Name**](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#build-image.examples.custom-image-name)
           By default the image name and tag name is taken from the artifactId and the project version, for example: docker.io/library/**${project.artifactId}:${project.version}**.
           It's necessary to add [**Spring Boot Maven Plugin** **spring-boot-maven-plugin**](https://docs.spring.io/spring-boot/docs/1.5.22.RELEASE/reference/html/build-tool-plugins-maven-plugin.html)
           to **pom xml** and so you can change the default name and many other parameters.
 
-          #### [**Packaging OCI Images**](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#build-image)
-
-          > _The plugin can create an OCI image from a jar or war file using Cloud Native Buildpacks (CNB). Images can be built on the command-line using the build-image goal. This makes sure that the package lifecycle has run before the image is created._
-
-          ```
+       #### [**Packaging OCI Images**](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#build-image)
+       > _The plugin can create an OCI image from a jar or war file using Cloud Native Buildpacks (CNB). Images can be built on the command-line using the build-image goal. This makes sure that the package lifecycle has run before the image is created._
+       
+        ```
               <plugin>
                  <groupId>org.springframework.boot</groupId>
                  <artifactId>spring-boot-maven-plugin</artifactId>
@@ -439,13 +438,13 @@ Spring Boot OCI Image by Docker Engine - Simple Example
                      </image>
                  </configuration>
               </plugin>
-          ```
-
-          * **OUTPUT**
-            ```
-                oci-image-simple-example:0.0.1-SNAPSHOT
-            ```
-          > You can customize the environment and parameters of the OCI image such as: Image name, tag name, JDK, JRE, JVM size and others ...  
+        ```
+        
+       * **OUTPUT**
+        ```
+           oci-image-simple-example:0.0.1-SNAPSHOT
+        ```
+       > You can customize the environment and parameters of the OCI image such as: Image name, tag name, JDK, JRE, JVM size and others
 
        # RUN CONTAINER
     
@@ -463,6 +462,9 @@ Spring Boot OCI Image by Docker Engine - Simple Example
     
         * After create Container with OCI IMAGE locally go to your browser **http://[ip]:[port]/api/ip** for example -> http://192.168.1.187:8181/api/ip
          ![docker-service-after-run-container.png](docker-service-after-run-container.png)
+
+
+
     
 
 
