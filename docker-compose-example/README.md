@@ -3,7 +3,7 @@
 
 
 ---
-Spring Boot App Mysql Database Connection - Docker Image Creation Orchestrated through Compose file
+Spring Boot & Docker Compose File & Connection Mysql DB & PhpMyAdmin Client
 =============
 
 # Required Setup
