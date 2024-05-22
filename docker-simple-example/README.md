@@ -7,11 +7,13 @@ Simple SpringBoot  Docker Image Example
 
 [`SPRINGBOOT`] ![ICON SPRINGBOOT](https://start.spring.io/icon_144x144.7d360c62a3c2b77823306d48e19a144b.png)   [`DOCKER`] ![ICON DOCKER](https://avatars.githubusercontent.com/u/7739233?s=200&v=4)
 
-# Required
+# Required Setup
 
-- Minimal [Spring Boot v.3](http://projects.spring.io/spring-boot/)  ![SPRINGBOOT-INITIALIZR](https://spring.io/favicon-32x32.png?v=96334d577af708644f6f0495dd1c7bc8)  sample app
-- [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) set system variable env.
-- [Maven 3.9.6](https://maven.apache.org)
+- [**Spring Boot v.3**](http://projects.spring.io/spring-boot/)  ![SPRINGBOOT-INITIALIZR](https://spring.io/favicon-32x32.png?v=96334d577af708644f6f0495dd1c7bc8) or above
+- [**Install Java**](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/windows-install.html) locally and set environment variable system.
+    - [Download JDK 17 ORACLE](https://www.oracle.com/java/technologies/downloads/#java17)
+    - [Download JDK 17 AMAZON CORRETTO](https://github.com/corretto/corretto-17/releases) 
+- [**Maven 3.9.6**](https://maven.apache.org)
     1. **Installing Maven on Windows**:
         1. The environment variable for JAVA also needs to be set beforehand
         2. [**Download Maven zip**](https://maven.apache.org/download.cgi) **apache-maven-3.9.6-bin.zip** on your Computer locally.
@@ -20,6 +22,8 @@ Simple SpringBoot  Docker Image Example
            ![env_system_var.png.png](env_system_var.png)
         5. Verify the correct MAVEN installation by command [`mvn -v`] ![maven-verify-installation.png](maven-verify-installation.png)
 
+- [Install Plugin Docker on IntelliJ IDEA](https://plugins.jetbrains.com/plugin/7724-docker)
+    * ![docker-plugin-on-intellij.png](docker-plugin-on-intellij.png)
 
 - [Windows (WSL 2) Subsystem for Linux Documentation](https://learn.microsoft.com/en-us/windows/wsl/)
     * ![Windows - WSL2 Ubuntu 22.04](01_image_wsl.png)
