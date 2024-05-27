@@ -26,6 +26,9 @@ Spring Boot - Simple Example Docker Image by Command on Console
 
 - [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/) after download and created account on Docker, it's necessary bind to subsystem WSL Windows.
     * ![Docker Desktop for Windows](02_image_docker_desktop.png)
+       > **Docker** is enterprise-level container management software. Think of a **container** as a very lightweight virtual machine. A container allows you to run applications in their own isolated memory space, while still maintaining access to common resources such as file systems. Containers are lightweight and do not require processor-intensive systems, such as GUI support, device drivers, and other more advanced operating system components. Containers are built from images combined with local operating system resources. Developers can build, test, and deploy their applications locally or on a production server. 
+In other words, Docker automates the deployment of apps as portable, self-sustaining containers that can run in the cloud or on-premises.
+
 
 
 ### Step by step
